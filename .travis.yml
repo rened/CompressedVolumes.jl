@@ -1,0 +1,13 @@
+language: julia
+os:
+  - linux
+  - osx
+julia:
+  - 0.4
+sudo: true
+notifications:
+  email:
+    - code@donner.at
+before_script:
+    sudo apt-get -y install ffmpeg
+    sudo apt-get -y install libavcodec-extra-52 libavdevice-extra-52 libavfilter-extra-0 libavformat-extra-52 libavutil-extra-49 libpostproc-extra-51 libswscale-extra-0
